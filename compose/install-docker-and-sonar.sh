@@ -71,4 +71,4 @@ echo "vm.max_map_count=262144" | sudo tee -a /etc/sysctl.conf
 sudo sysctl --system
 
 # Instala o Sonarqube como um serviço
-cd sonarqube && docker-compose up -d 
+docker-compose up -d 
