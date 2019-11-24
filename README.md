@@ -18,20 +18,6 @@ Each example is described in this list with some references that will help you a
 
 If You have any ideas on improoving this list, please open a pull request or an issue.
 
-## Example 1 - Docker Compose
+## Examples
 
-### Files
-
-compose/
--- docker-compose.yml
--- install-docker-and-sonar.sh
-
-### How to use
-
-If you already uses docker on you machine you can use the command:
-
-```bash
-docker-compose up -d
-```
-
-Otherwise you can execute the install-docker-and-sonar.sh file.
+1. [Docker compose installation](https://github.com/edumco/sonarqube-examples/tree/master/compose)
