@@ -1,10 +1,4 @@
-# Docker Compose
-
-## Files
-
-compose/
--- docker-compose.yml
--- install-docker-and-sonar.sh
+# SonarQube Server installed with Docker Compose
 
 ## How to use
 
@@ -14,4 +8,24 @@ If you already uses docker on you machine you can use the command:
 docker-compose up -d
 ```
 
+This will create a new service using the [Long Term Support](https://en.wikipedia.org/wiki/Long-term_support) version of SonarQube the will be available on port 9000 by default (this can be changed later)
+
+On your browser acess <http://localhost:9000>
+
 Otherwise you can execute the install-docker-and-sonar.sh file.
+
+## 🔥🔥🔥 Houston, we have a problem 🔥🔥🔥
+
+You may enconter some issues on the first run, they are related to the use of [Elasticsearch](https://www.elastic.co/pt/products/elasticsearch) wich is a powerful search system that is used inside SonarQube.
+
+Elasticsearch is a superfast and iteligent search that uses a lot of virtual memory but linux prevents a process from use too much of it and doing so prevents elasticsearch to initiate.
+
+The work around is to increase the limit by channging the default value
+
+```sh
+echo "vm.max_map_count=262144" | sudo tee -a /etc/sysctl.conf
+```
+
+This work around is already in the script in this folder
+
+To learn more about it visit [https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html)
