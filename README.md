@@ -22,4 +22,4 @@ If You have any ideas on improoving this list, please open a pull request or an 
 
 ## Examples
 
-    1. [Docker compose installation](https://github.com/edumco/sonarqube-examples/tree/master/compose)
+1. [Docker compose installation](https://github.com/edumco/sonarqube-examples/tree/master/compose)
