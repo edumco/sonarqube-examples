@@ -14,18 +14,9 @@ On your browser acess <http://localhost:9000>
 
 Otherwise you can execute the install-docker-and-sonar.sh file.
 
-## 🔥🔥🔥 Houston, we have a problem 🔥🔥🔥
+## Houston, we have a problem 🔥🔥🔥
 
-You may encon=============================== warnings summary ===============================
-/usr/local/lib/python3.7/site-packages/_pytest/junitxml.py:436
-  /usr/local/lib/python3.7/site-packages/_pytest/junitxml.py:436: PytestDeprecationWarning: The 'junit_family' default value will change to 'xunit2' in pytest 6.0.
-  Add 'junit_family=legacy' to your pytest.ini file to silence this warning and make your suite compatible.
-    _issue_warning_captured(deprecated.JUNIT_XML_DEFAULT_FAMILY, config.hook, 2)
-
--- Docs: https://docs.pytest.org/en/latest/warnings.html
--------------------- generated xml file: /reports/unit.xml ---------------------
-============================== 1 warning in 0.01s ==============================
-The command '/bin/sh -c pytest --junit-xml=/reports/unit.xml' returned a non-zero code: 5ter some issues on the first run, they are related to the use of [Elasticsearch](https://www.elastic.co/pt/products/elasticsearch) wich is a powerful search system that is used inside SonarQube.
+You may enconter some issues on the first run, they are related to the use of [Elasticsearch](https://www.elastic.co/pt/products/elasticsearch) wich is a powerful search system that is used inside SonarQube.
 
 Elasticsearch is a superfast and iteligent search that uses a lot of virtual memory but linux prevents a process from use too much of it and doing so prevents elasticsearch to initiate.
 
@@ -37,16 +28,7 @@ echo "vm.max_map_count=262144" | sudo tee -a /etc/sysctl.conf
 
 This work around is already in the script in this folder
 
-To learn more=============================== warnings summary ===============================
-/usr/local/lib/python3.7/site-packages/_pytest/junitxml.py:436
-  /usr/local/lib/python3.7/site-packages/_pytest/junitxml.py:436: PytestDeprecationWarning: The 'junit_family' default value will change to 'xunit2' in pytest 6.0.
-  Add 'junit_family=legacy' to your pytest.ini file to silence this warning and make your suite compatible.
-    _issue_warning_captured(deprecated.JUNIT_XML_DEFAULT_FAMILY, config.hook, 2)
-
--- Docs: https://docs.pytest.org/en/latest/warnings.html
--------------------- generated xml file: /reports/unit.xml ---------------------
-============================== 1 warning in 0.01s ==============================
-The command '/bin/sh -c pytest --junit-xml=/reports/unit.xml' returned a non-zero code: 5 about it visit [https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html)
+To learn more about it visit [https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html)
 
 ## Compose file details
 
