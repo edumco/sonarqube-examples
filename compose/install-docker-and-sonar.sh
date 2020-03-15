@@ -49,7 +49,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 # Permite executar o docker sem o sudo
 sudo groupadd docker
-sudo usermod -aG docker $USER
+sudo usermod -aG docker "$USER"
 newgrp docker
 
 # Adiciona comand completion
