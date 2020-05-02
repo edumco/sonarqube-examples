@@ -28,4 +28,4 @@ If You have any ideas on improoving this list, please open a pull request or an 
 
 ## License
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fedumco%2Fsonarqube-examples.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fedumco%2Fsonarqube-examples?ref=badge_large)
+[GNU General Public License v3.0](LICENSE)
