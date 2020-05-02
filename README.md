@@ -1,4 +1,4 @@
-# Sonarqube Examples ![my image](https://github.com/edumco/sonarqube-examples/raw/master/logo.png)
+# Sonarqube Examples :traffic_light:
 
 Recipees on how to install and use SonarQube in your projects.
 
