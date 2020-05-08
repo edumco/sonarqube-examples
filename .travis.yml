@@ -10,4 +10,4 @@ jobs:
     if: sender != edumco
 
 install:
-  - ./install.sh
+  - ./compose/install-docker-and-sonar.sh
