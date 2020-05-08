@@ -2,14 +2,12 @@
 
 Recipees on how to install and use SonarQube in your projects.
 
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/edumco/sonar-scanner)
+[![Build Status](https://travis-ci.com/edumco/sonarqube-examples.svg?branch=master)](https://travis-ci.com/edumco/sonarqube-examples)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1ab8bf7c21dc4cfcae643f4d41b7cf13)](https://www.codacy.com/manual/edumco/sonarqube-examples?utm_source=github.com&utm_medium=referral&utm_content=edumco/sonarqube-examples&utm_campaign=Badge_Grade)
 
 ## About
 
 SonarQube is a continuos code quality analizer. It scans your codebase to find possible problems based on well knowns patterns and gives you very good information about where the problems are and how to fix them.
-
-
 
 The examples uses the comunity edition and other free softwares.
 
