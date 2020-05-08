@@ -1,0 +1,13 @@
+language: shell
+
+os: linux
+
+dist: bionic
+
+jobs:
+  exclude:
+    if: branch != master
+    if: sender != edumco
+
+install:
+  - ./install.sh
