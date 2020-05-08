@@ -1,4 +1,4 @@
-# Sonarqube Examples :traffic_light:
+# Sonarqube Examples 🚥
 
 Recipees on how to install and use SonarQube in your projects.
 
