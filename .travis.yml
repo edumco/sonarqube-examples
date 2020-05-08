@@ -5,4 +5,5 @@ os: linux
 dist: bionic
 
 install:
+  - cd compose
   - docker-compose up -d
