@@ -7,8 +7,8 @@ services:
     ports:
       - "9000:9000"
     environment:
-      - sonar.jdbc.username=sonar
-      - sonar.jdbc.password=sonar
+      - sonar.jdbc.username=$POSTGRES_USER
+      - sonar.jdbc.password=$POSTGRES_PASSWORD
       - sonar.jdbc.url=jdbc:postgresql://postgres/sonar
     volumes:
       - sonar_conf:/opt/sonarqube/conf
@@ -23,9 +23,9 @@ services:
     ports:  
      - "5432:5432"
     environment:
-      - POSTGRES_USER=sonar
-      - POSTGRES_PASSWORD=sonar
-      - POSTGRES_DB=sonar 
+      - POSTGRES_USER=$POSTGRES_USER
+      - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+      - POSTGRES_DB=$POSTGRES_DB 
     volumes:
       - postgresdata:/var/lib/postgresql/data
 volumes:
