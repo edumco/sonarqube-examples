@@ -6,8 +6,7 @@ dist: bionic
 
 jobs:
   exclude:
-    if: branch != master
     if: sender != edumco
 
 install:
-  - sudo ./compose/install-docker-and-sonar.sh
+  - docker-compose up -d
