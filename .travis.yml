@@ -4,9 +4,5 @@ os: linux
 
 dist: bionic
 
-jobs:
-  exclude:
-    if: sender != edumco
-
 install:
   - docker-compose up -d
